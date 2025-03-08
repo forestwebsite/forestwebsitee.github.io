@@ -47,8 +47,6 @@ var x=parseFloat(params.get('x'))||0
 var y=parseFloat(params.get('y'))||0
 ExampleGroup.addTo(mymap)
 mymap.setView([y,x],4)
-let [x,y,name]=c.split(',')
-
 L.marker([parseFloat(y),parseFloat(x)],{icon:customIcon()})
 .bindTooltip(name,{permanent:false,direction:'top'}).addTo(group)
 </script>
